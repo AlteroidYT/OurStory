@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Para mi Franchii ❤️</title>
+
+    <meta
+        name="theme-color"
+        content="#F9F2EA">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+</head>
+
+<body>
+
+    <!-- =======================================================
+                        MÚSICA
+    ======================================================== -->
+
+    <audio
+        id="music"
+        preload="auto"
+        loop
+        playsinline>
+
+        <source
+            src="assets/music/music.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+    <button id="musicToggle">
+
+    🔊
+
+    </button>
+
+    <!-- =======================================================
+                        FONDO
+    ======================================================== -->
+
+    <div id="background">
+
+        <div class="gradient"></div>
+
+        <div class="gradient2"></div>
+
+        <div class="gradient3"></div>
+
+        <div id="petals"></div>
+
+        <div id="sparkles"></div>
+
+        <div id="blurFlowers"></div>
+
+    </div>
+
+    <!-- =======================================================
+                        INTRO
+    ======================================================== -->
+
+    <section id="introScreen">
+
+        <div class="introCard">
+
+            <div id="envelope">
+
+                <img
+                    src="assets/decor/envelope.png"
+                    alt="Sobre">
+
+            </div>
+
+            <h1>
+
+                Para mi Franchiopoliss
+
+            </h1>
+
+            <p>
+
+                Preparé algo muy especial para ti y solo para ti bebe.
+
+            </p>
+
+            <button id="openEnvelope">
+
+                Abrir
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- =======================================================
+                        PASSWORD
+    ======================================================== -->
+
+    <section id="passwordScreen">
+
+        <div class="passwordCard">
+
+            <h2>
+
+                Nuestra pequeña llave.
+
+            </h2>
+
+            <p>
+
+                Escribe la clave secreta, la fecha mas hermosa y perfecta de todo el universo.
+
+            </p>
+
+            <div id="passwordDisplay">
+
+                • • • •
+
+            </div>
+
+            <div id="keypad">
+
+                <button
+                    class="key"
+                    data-number="1">
+
+                    1
+
+                </button>
+
+                <button
+                    class="key"
+                    data-number="2">
+
+                    2
+
+                </button>
+
+                <button
+                    class="key"
+                    data-number="3">
+
+                    3
+
+                </button>
+
+                <button
+                    class="key"
+                    data-number="4">
+
+                    4
+
+                </button>
+
+                <button
+                    class="key"
+                    data-number="5">
+
+                    5
+
+                </button>
+
+                <button
+                    class="key"
+                    data-number="6">
+
+                    6
+
+                </button>
+
+                <button
+                    class="key"
+                    data-number="7">
+
+                    7
+
+                </button>
+
+                <button
+                    class="key"
+                    data-number="8">
+
+                    8
+
+                </button>
+
+                <button
+                    class="key"
+                    data-number="9">
+
+                    9
+
+                </button>
+
+                <button
+                    id="clearPassword">
+
+                    ✿
+
+                </button>
+
+                <button
+                    class="key"
+                    data-number="0">
+
+                    0
+
+                </button>
+
+                <button
+                    id="confirmPassword">
+
+                    ♥
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =======================================================
+                        STORY
+    ======================================================== -->
+
+    <main id="story">
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="heroFlowers left">
+
+                <img
+                    src="assets/decor/bouquet-small-pink.png">
+
+                <img
+                    src="assets/decor/rose-pink.png">
+
+                <img
+                    src="assets/decor/tulip-pink.png">
+
+            </div>
+
+            <div class="heroCenter">
+
+                <h1>
+
+                    Para mi niña perfecta, mi todo, mi universo completo y perfecto.
+
+                </h1>
+
+                <p>
+
+                    Las historias mas hermosas
+                    y perfectas son unicamente a tu lado bebe,
+                    eres la princesita mas perfecta de todo
+                    el universo ✨🌹💗💗💗
+
+                </p>
+
+                <div id="scrollHint">
+
+                ↓
+
+                <br>
+
+                Desliza
+
+                </div>
+
+            </div>
+
+            <div class="heroFlowers right">
+
+                <img
+                    src="assets/decor/bouquet-small-roses.png">
+
+                <img
+                    src="assets/decor/rose-red.png">
+
+                <img
+                    src="assets/decor/tulip-purple.png">
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+
+                CAPÍTULO 1
+
+        ========================== -->
+
+        <section class="chapter">
+
+            <aside class="side left">
+
+                <img
+                    class="flower"
+                    src="assets/decor/rose-white.png">
+
+                <img
+                    class="flower"
+                    src="assets/decor/rose-red.png">
+
+                <img class="flower" src="assets/decor/rose-pink.png">
+
+                <figure class="memory">
+
+                    <img
+                        src="assets/photos/photo1.jpg">
+
+                    <figcaption>
+
+                        Nuestro primer retiro 💗💗💗
+
+                    </figcaption>
+
+                </figure>
+
+                <img
+                    class="flower"
+                    src="assets/decor/lily-blue.png">
+                
+                <img class="flower" src="assets/decor/rose-blue-big.png">
+
+                <img
+                    class="flower"
+                    src="assets/decor/starfish.png">
+
+                <img class="flower" src="assets/decor/rose-yellow.png">
+
+                <img
+                    class="flower"
+                    src="assets/decor/shell-white.png">
+
+            </aside>
+
+            <article class="paper">
+
+                <h2>
+
+                    Mi princeshitaaaaa hermoshaaaaa de mi vidaaaaaa 
+
+                </h2>
+
+                <p>
+
+                    Desde el dia en que te conoci supe que todo se trataria de ti, que toda la belleza de todo el universo provenia de ti y solo de ti bebe, que todo se trataria de ti,
+                    cada respiro, cada momento de felicidad y risas, cada segundo de sentirme el ser mas completo y feliz de todo el universo, y es que mi vida hermosa, te amo, te amo, te amo 
+                    con una intensidad que te puede dejar sin aliento entre tantos besos y amor mas que infinito bebe, te has convertido en todo lo que alguna vez e necesitado bebe, te amo mas
+                    que a nada en todo el univers0, eres el centro de todo, la razon de todo, de porque los amaneceres son hermosos, de hehco antes pensaba qeu eran hermosos hasta que tu mirada me
+                    hizo tropezar, justo ahi fue que me di cuenta que todo lo que alguna vez alguien ha llamado hermoso o perfecto en todo el universo, todo es solo un derivado de tu profunda e infinita belleza,
+                    eres el centro de mi gravedad y el norte de mi brujula, eres la luz que ilumina cada uno de mis dias, te encuentro en todo lo hermoso, tus ojos en el amanecer, calma y paz en tu presencia,
+                    te encuentro por completo en las rosas, tu olor que me hace abrazarte y no dejarte ir, mi alma entregada por completo a la tuya de la forma mas leal, romantica y profunda, ya no
+                    se donde termino yo y donde empiezas tu, con lo fusionados que estan nuestros caminos y todo nuestro amor, cada segundo a tu lado solo puede llamarse magico, perfecto, unico, inolvidable, hermoso
+                    e inefable, eres la clave de mi felicidad y la perfeccion del universo por completo bebe, eres todo lo que siempre e soñado, la perfeccion de mi vida, todo lo que soy y necesito, eres
+                    mi abosoluto todo, mi perfeccion azul, mi angelito divino, mi futura esposa, te requeteeee amoooooooouuuuuuuu mashhhhhhhhh que infinitooooooouuuuuu y shiempreeeeeeee lo hareeeee con toditoooooooo
+                    de miiiiiiiiii mi coshotaaaaa hermoshaaaaaa 💗💗💗💗💗💗💗💗💗
+
+                </p>
+
+                <p>
+
+                    A veces me detengo a pensar en que fue lo que hice, que fue lo que llegue a hacer para merecerte, para merecer a una princesa tan hermosa y perfecta directa de un cuento de hadas, para mercerte a ti
+                    mi perfeccionn azulll 🩵🩵🩵🩵🩵, me detengo a pensar como el destino, como el tiempo no deja de escribir paginas, en lo afortunado que soy de tenerte en mi vida y lo feliz y completo que me haces
+                    bebe, como en la historia de el universo eres la protagonista de cada uno de mis dias, como quiero pasar cada dia de mi vida unicamente a tu lado bebe, nada me hace mas feliz que la vida me haya
+                    hecho tropezar en tu camino, que te haya puesto en mi vida bebe, el mayor regalo de la vida, eres tu, eres lo mejor que me haya pasado en toda mi vida, eres lo mas perfecto y unico de todo el universo, 
+                    todo lo que amo y necesito, mi absoluto todo 🩵🩵🩵🩵🩵🩵
+
+                </p>
+
+            </article>
+
+            <aside class="side right">
+
+                <img
+                    class="flower"
+                    src="assets/decor/rose-yellow.png">
+                
+                <img class="flower" src="assets/decor/lily-pink.png">
+
+                <figure class="memory">
+
+                    <img
+                        src="assets/photos/photo9.jpg">
+
+                    <figcaption>
+
+                        Un amor mas que inmenso 💗💗💗
+
+                    </figcaption>
+
+                </figure>
+
+                <img
+                    class="flower"
+                    src="assets/decor/rose-blue.png">
+
+                <figure class="memory">
+
+                    <img
+                        src="assets/photos/photo16.jpg">
+
+                    <figcaption>
+
+                        La felicidad de mi vida entera 🩵🩵🩵
+
+                    </figcaption>
+
+                </figure>
+
+                <img
+                    class="flower"
+                    src="assets/decor/shell-blue.png">
+
+                <img
+                    class="flower"
+                    src="assets/decor/rose-pink-round.png">
+
+            </aside>
+
+        </section>
+
+        <!-- =========================
+
+                CAPÍTULO 2
+
+        ========================== -->
+
+        <section class="chapter">
+
+            <aside class="side left">
+
+                <img
+                    class="flower"
+                    src="assets/decor/rose-blue-big.png">
+
+                <img class="flower" src="assets/decor/lily-pink.png">
+
+                <figure class="memory">
+
+                    <img
+                        src="assets/photos/photo5.jpg">
+
+                    <figcaption>
+
+                        Nuestro paseito al museo 💛💛💛
+
+                    </figcaption>
+
+                </figure>
+
+                <img
+                    class="flower"
+                    src="assets/decor/bouquet-small-pink.png">
+
+                <img
+                    class="flower"
+                    src="assets/decor/tulip-blue.png">
+
+                <img class="flower" src="assets/decor/tulip-blue.png">
+
+            </aside>
+
+            <article class="paper">
+
+                
+                <p>
+
+                    Desde que llegaste a mi vida todo ha tenido sentido, las canciones cobraron sentido, incluso las que he escuchado, de repente entendi lo que significa amar, lo que significa que una cancion haya sido, 
+                    creada, unicamente para expresarte lo mas que infinito que te amo y te amare por siempre, las comidas a tu lado son mas ricas, los momentos contigo son mas rapidos porque son los momentos que valen la pena
+                    los que mas rapido avanzan, tus besos y abrazos los que me hacen abrir los ojos, tu presencia y apoyo lo que me hace levantarme, a tu lado los amaneceres son mas hermosos, desde que llegaste a donde sea qeu vaya
+                    y no estas me haces mas falta de la que imaginas, a tu lado es todo y sin ti no hay nada, desde que llegaste los juegos son mas divertidos solo cuando son contigo, las peliculas mas interesantes, hasta los juegos
+                    mas competitivos, los momentos a tu lado son magnificos, son perfectos, son inolvidables, son unicos, son hermosos, son demasiado nuestros, son demasiado inefables 💛💛💛💛💛💛.
+
+                </p>
+
+                <p>
+
+                    Desde que llegaste, todo tiene sentido, como si el universo hubiera estado esperando el momento exacto para cruzar nuestros caminos, como si cada vez que hemos dado un respiro solo hubiera sido el prologo para que
+                    empiece lo mas hermoso y puro de todo el universo, esto que tenemos tu y yo bebe, eres mi tesoro, mi todo, mi perfeccion azul, mi estrellita de miel, mi futuro, mi apoyo, mi pilar, mi amor inmenso, 
+                    mi futura esposa 🩵🩵🩵🩵🩵, eres la estrella que no me canso de ver, la unica estrellita de miel de todo el unvierso, es que me hace sonreir incluso en los dias mas grises, esa que me muestra lo que significa amar
+                    a una persona mas que infinito, esa que me hace sentir en las nubes con sus miradas, sus roces, sus gestos, sus palabrasm, sus silencios y gritos, sus juegos, sus manos, sus ojos, sus curvitas, su perfeccion inigualable,
+                    su pelito brillante, sus cejitas y pestañitas tan hermosas, su cuidado, su proteccion, su apoyo, su amor mas que infinito, lo unica y perfecta que es, esa bebe, esa que vez en tu espejo cada dia, gracias por ser toda
+                    mi vida bebe, mi destino, mi felicidad, mi hogar, mi absoluto todo 💗💗💗💗💗💗💗💗
+                
+                </p>
+
+            </article>
+
+            <aside class="side right">
+
+                <img
+                    class="flower"
+                    src="assets/decor/rose-blue.png">
+
+                <figure class="memory">
+
+                    <img
+                        src="assets/photos/photo7.jpg">
+
+                    <figcaption>
+
+                        Contigo todo es mejor 🦖💗💗💗
+
+                    </figcaption>
+
+                </figure>
+
+                <img
+                    class="flower"
+                    src="assets/decor/rose-yellow.png">
+                
+                <img class="flower" src="assets/decor/rose-white.png">
+
+                <img
+                    class="flower"
+                    src="assets/decor/shell-white.png">
+
+                <figure class="memory">
+
+                    <img
+                        src="assets/photos/photo6.jpg">
+
+                    <figcaption>
+
+                        El amorcito de mi vida entera 🩵🩵🩵
+
+                    </figcaption>
+
+                </figure>
+
+                <img
+                    class="flower"
+                    src="assets/decor/rose-pink.png">
+
+                <img class="flower" src="assets/decor/rose-blue-big.png">
+
+                <img class="flower" src="assets/decor/rose-yellow.png">
+
+            </aside>
+
+        </section>
+
+        <!-- =========================
+
+                CAPÍTULO 3
+
+        ========================== -->
+
+        <section class="chapter">
+
+            <aside class="side left">
+
+                <img
+                    class="flower"
+                    src="assets/decor/bouquet-small-roses.png">
+
+                <img
+                    class="flower"
+                    src="assets/decor/tulip-purple.png">
+
+                <img class="flower" src="assets/decor/shell-white.png">
+
+                <img class="flower" src="assets/decor/rose-blue-big.png">
+
+                <figure class="memory">
+
+                    <img
+                        src="assets/photos/photo12.jpg">
+
+                    <figcaption>
+
+                        La luz de cada uno de mis dias 💗💗💗💗
+
+                    </figcaption>
+
+                </figure>
+
+            </aside>
+
+            <article class="paper">
+
+                <h2>
+
+                    Quiero estar a tu lado siempre mi diosita hermosa
+
+                </h2>
+
+                <p>
+
+                    Quiero que sepas que desde que llegaste a mi vida, a este mundo tan loco, todo cambio, antes de ti los dias eran normales y demasiado simples y grises pero llegaste tu y le diste un color y diversion
+                    como no tienes la menor idea, tu eres la razon por la que sonrio incluso cuando estoy cansado, la razon por la que me duermo feliz, la razon por la que me levanto con ganas de mas, de verte, de besarte
+                    entera y tenerte a mi lado al abrir los ojos, tu eres el motivo de mis pensamiendos mas hermosos, de mis sueños mas profundos, eres la razon por la que trabajo cada dia, lo unico que soy capaz de amar con
+                    toditoooooooo de miiiii mi coshotaaaaa hermoshaaaaa, quiero todo, absolutamente todo todo a tu lado y unicamente a tu lado mi vida hermosa, eres todo lo que quiero, deseo y necesito para ser el hombre
+                    mas completo y feliz de todo el universo, me haces el ams feliz y completo, el mas afortunado por tenerte mi vida hermosa, eres todo lo que yo anhelo 🥹🥹🥹💗💗💗💗💗
+
+                </p>
+
+                <p>
+
+                    Y es que mi vida hermosa no existe manera alguna de describir lo que siento por ti, lo que pasa en mi cuerpo, corazon y alma cada vez que te veo a los ojos, cada que siento tu presencia, cada que reimos, cada
+                    que jugamos, cada que nos besamos, cada que comemos juntos, cada que nos abrazamos, cada que sale de la forma mas brillante un te amo, cada que te agarro la mano, cada que te hago trenzas, cada que corremos juntos, cada
+                    que te veo, cada instante que te veo parece que vas en camara lenta y el resto deprisa, siento por ti demasiado bebe, es demsiado grande e inmenso para caber en palabras. Eres mi luz, mi paz, mi refugio, mi felicidad, mi
+                    niña chiquita, hermosa y perfecta, mi perfeccion azul, esa pasion que me quema por dentro, eres para mi mas de lo que imaginas porque para mi eres todo, todo lo que amo, todo lo que necesito, todo lo que alguna vez e soñado, 
+                    mi novia, mi mujer, mi niña, mi confidente, mi refugio, mi esposa, mi estrellita de miellshhhh, mi vida entera bebe, mi absolutoo todooooo coshotaaaaa hermoshaaaaa 🩵🩵🩵🩵🩵🩵
+
+                </p>
+
+                <p>
+
+                    No quiero una mañana sin ti, porque tu eres mi mañana, mi cada dia, mi hoy, mi siempre, mi todo, no quiero ni imaginar un mundo donde no estes bebe, porque mi futuro tiene tu nombre escrito en cada rincon, es que ni eso, tu eres
+                    mi futuro al completo, quiero caminar contigo en la costa, jugar, reir, llorar, equivocarme, aprender, amar, cuidar, proteger, apoyar, construir y soñar, contigo quiero absolutamente todo todo todo todo todoooooo bebeeeeee, quiero estar
+                    a tu lado siempre mi toditoooooooo perfectoooooooo, contigo todo se ilumina, todo es mas claro, eres todo lo que necesito mi princesita perfecta 💛💛💛💛💛💛
+
+                </p>
+
+                <p>
+
+                    Te requeteeeeee amoooooooouuuuuuuu mashhhhhhhhh que infinitooooooouuuuuu con toditoooooooo de miiiii bebeeeee 🩵🩵🩵🩵🩵, a veces me quedo pensando en lo mashhhhhhhhh que infinitooooooouuuuuu que te amoooooooouuuuuuuu bebeeeeeee, en lo
+                    hermoso y perfecto que es estar a tu lado, en lo feliz y completo que me haces bebe, es que quiero hacerte la mujer mas feliz de todo el universo, quiero estar a tu lado siempre bebe, quiero despertar cada mañana y que mis ojos choquen
+                    con los tuyos, aunque estes dormida quiero verte toda despeinada durmiendo y darte besos en la frente rezando para que no despiertes jsjsjsjjssjsjjsjsjsjs, quiero estar contigo en cada desayuno, en cada almuerzo, en cada merienda, en cada
+                    cena, en cada comida totalmente por antojo, quiero estar ahi contigo en cada rincon de nuestra casa, quiero estar contigo, en las buenas, en las malas, en las peores y en las mejores, quiero estar contigo cuando te sientas mal, cuando te sientas
+                    bien, cuando te sientas perfecta y quieras saltar en la cama y cuando estes tan cansada que escuches voces de la cama diciendote que vayas a dormir jsjsjjsjsjjsjsjsjsjs, quiero jugar contigo Mario Kart, Mario Party, Monopoly, y todos los juegos de
+                    mesa mas jevis que veamos, hasta quiero que tengamos nuestra super consola para jugar todos esos juegitos tan jevis como overcooked para cocinarshhhh jsjsjsjjsjsjjsjsjsj, quiero cocinar contigo, sentarme en la terraza contigo y ver el atardecer justo
+                    ahi abrazados y en la playa abrazados con los pies medio dormidos bajo el agua por pasar todo el sabado ahi metidos, ir contigo a los lugares mas jevis donde nos demos la real halturita bebe, ir contigo a cada lugar que quieras, no me importa si lo
+                    viste en TikTok y es una playa escondida y esta pa MonteCristi jsjsjjsjsjjsjjsjsjjsjs, nosotros vamos bebe, juntitoshhhhhh, adonde sea que nos lleve el viento construyendo momentos inolvidables y hermosos sin parar, estar para ti en los dias
+                    mas complicados, cansados y grises por igual, de todas las formas posibles pintar esos dias de color y sacarte una sonrisotaaaaa, quiero que sepas siempre que puedes contar conmigo para lo que sea sin importar su naturaleza, no soy el hombre mas
+                    fuerte del mundo, pero si soy el que esta dispuesto a todo por ti, ese que te quiere proteger y amar como nada en todo el universo, quiero estar ahi contigo los dias mas locos por igual, con nuestra Marley, quiero armar Legos contigo asi grandotes
+                    jsjsjsjjsjsjjsjsjsjsjsjs, hay tantas cosas bebe que quiero hacer contigo, tantas veces que voy a querer sacarte una sonrisa, tantas veces que te voy a decir y demostrar cuanto te amo bebe, que eres mi absoluto todo 💗💗💗💗 Te amo con todo mi corazon, 
+                    con toda mi alma, con cada fibra de mi cuerpo, te amo mas de lo que las palabras puedan decir, mas de lo que las canciones pueden cantar, mas de lo que las poesisas y poemas pueden rimar o contar, mas de lo que siento que alguna vez podre explicar, mas de
+                    lo que cualquier limite en todo el multiverso podra limitar, gracias por ser tu, por elegirme, por dejarme amarte con todo de mi, por hacerme sentir tan inexplicablemente feliz, el mas feliz sin duda alguna, el mas completo, el mas afortunado, 
+                    el mas fuerte, el mas amado bebe 💗💗💗💗💗💗💗 
+                </p>
+
+                <p>
+
+                    Te requeteeeeeeee amooooooooooouuuuuuuuuuuuuuuuu mashhhhhhhhhhhhh que infinitooooooouuuuuu te amooooooooooouuuuuuuuuuuuuuuuu te amooooooooooouuuuuuuuuuuuuuuuu te amoooooooooooioooooouuuuuuuuuuuuuuuuu te amooooooooooouuuuuuuuuuuuuuuuuuuuuuuuuuu
+                    te amooooooooooouuuuuuuuuuuuuu te amoooooooooooooooopouuuuuuuuuuuuuuuuu mashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh que infinitooooooooooooouuuuuuuuuuu con toditooooooooooo de miiiiiiiiiii y shiempreeeeeeeeeee lo hareeeeee con todooooooo bebeeeeee
+                    mioooooooo hermoshoooooooooooo, mi princeshitaaaaa de vestido azul, mi rosita perfecta, mi calderito, mi diosita, mi estrellita de mielllshhhh, mi futuro, mi todo perfecto 💛💛💛💛💛💛💛💛💛
+
+                </p>
+
+            </article>
+
+            <aside class="side right">
+
+                <img
+                    class="flower"
+                    src="assets/decor/rose-red.png">
+
+                <img class="flower" src="assets/decor/rose-pink.png">
+                
+                <img class="flower" src="assets/decor/rose-white.png">
+
+                <figure class="memory">
+
+                    <img
+                        src="assets/photos/photo21.jpg">
+
+                    <figcaption>
+
+                        La perfeccion de mi vida, mi Franchiopoliss hermoshaaaaa y perfectaaaa 🦕🩵🩵🩵🩵🩵
+
+                    </figcaption>
+
+                </figure>
+
+                <img
+                    class="flower"
+                    src="assets/decor/rose-white.png">
+
+                <img
+                    class="flower"
+                    src="assets/decor/pearl.png">
+
+                <img
+                    class="flower"
+                    src="assets/decor/tulip-pink.png">
+
+            </aside>
+
+        </section>
+
+        <!-- =========================
+
+                CAPÍTULO FINAL
+
+        ========================== -->
+
+        <section id="finalChapter">
+
+            <div class="endingFlowers">
+
+                <img
+                    src="assets/decor/rose-red.png">
+
+                <img
+                    src="assets/decor/rose-blue-big.png">
+
+                <img
+                    src="assets/decor/bouquet-small-pink.png">
+
+                <img
+                    src="assets/decor/bouquet-small-roses.png">
+
+            </div>
+
+            <div id="bouquetArea">
+
+                <img
+
+                    id="mainBouquet"
+
+                    src="assets/decor/main-bouquet.png"
+
+                    alt="Ramo principal">
+
+            </div>
+
+            <div class="endingText">
+
+                <h2>
+
+                    Mi princesita hermosa y perfecta
+
+                </h2>
+
+                <p>
+
+                    En las infinitas líneas del tiempo, en todas y cada una de ellas existe una versión de nosotros. Porque, en cada una, te eligo a ti, una y otra vez, en todas las vidas, en cualquier tiempo, en cualquier lugar 🥹🥹🥹💛💛💛💛💛💛
+
+                </p>
+
+                <span>
+
+                    Con toda mi alma, corazon y atomos,
+
+                </span>
+
+                <h3>
+
+                    Tu dinoshaurioooo loquitooooo 🦖🩵🩵🩵🩵🩵🩵🩵
+
+                </h3>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =========================
+
+            OVERLAY DE PÉTALOS
+
+    ========================== -->
+
+    <div id="petalOverlay"></div>
+
+    <!-- =========================
+
+            OVERLAY DE LUCES
+
+    ========================== -->
+
+    <div id="lightOverlay"></div>
+
+    <!-- =========================
+
+            OVERLAY DE DESTELLOS
+
+    ========================== -->
+
+    <div id="sparkleOverlay"></div>
+
+    <!-- =========================
+
+            GSAP
+
+    ========================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js">
+    </script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js">
+    </script>
+
+    <!-- =========================
+
+            SCRIPT
+
+    ========================== -->
+
+    <script
+        src="script.js">
+    </script>
+
+</body>
+
+</html>
