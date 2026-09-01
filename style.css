@@ -2343,3 +2343,167 @@ transform:translateY(0);
     }
 
 }
+
+/* =========================================================
+   INTRO — FIX DEFINITIVO PARA CELULAR
+   ========================================================= */
+
+#introScreen{
+    width:100%;
+    height:100svh;
+    min-height:100svh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+}
+
+.introCard{
+    width:min(90vw, 500px);
+
+    padding:40px 24px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    overflow:hidden;
+}
+
+#envelope{
+    width:min(310px, 78vw);
+    max-width:310px;
+
+    margin:0 auto;
+
+    flex-shrink:0;
+}
+
+#envelope img{
+    width:100%;
+    height:auto;
+}
+
+.introCard h1{
+    width:100%;
+    max-width:360px;
+
+    margin-top:30px;
+
+    font-family:"Great Vibes", cursive;
+    font-size:clamp(45px, 13vw, 62px);
+    line-height:1.05;
+
+    text-align:center;
+
+    overflow-wrap:anywhere;
+    word-break:normal;
+}
+
+.introCard p{
+    width:100%;
+    max-width:330px;
+
+    margin-top:18px;
+
+    font-size:clamp(16px, 4.5vw, 19px);
+    line-height:1.65;
+
+    text-align:center;
+}
+
+#openEnvelope{
+    margin-top:25px;
+
+    padding:15px 48px;
+
+    font-size:16px;
+}
+
+
+/* =========================================================
+   CELULARES
+   ========================================================= */
+
+@media screen and (max-width:600px){
+
+    #introScreen{
+        padding:0;
+    }
+
+    .introCard{
+        width:100%;
+        max-width:430px;
+
+        min-height:100svh;
+
+        padding:
+            max(25px, env(safe-area-inset-top))
+            20px
+            max(25px, env(safe-area-inset-bottom))
+            20px;
+    }
+
+    #envelope{
+        width:min(300px, 76vw);
+    }
+
+    .introCard h1{
+        max-width:350px;
+
+        font-size:clamp(44px, 12.5vw, 58px);
+
+        margin-top:28px;
+    }
+
+    .introCard p{
+        max-width:320px;
+
+        font-size:17px;
+        line-height:1.65;
+    }
+
+    #openEnvelope{
+        margin-top:24px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES PEQUEÑOS
+   ========================================================= */
+
+@media screen and (max-width:380px){
+
+    .introCard{
+        padding-left:16px;
+        padding-right:16px;
+    }
+
+    #envelope{
+        width:270px;
+        max-width:74vw;
+    }
+
+    .introCard h1{
+        font-size:44px;
+        margin-top:24px;
+    }
+
+    .introCard p{
+        font-size:15px;
+        max-width:290px;
+    }
+
+    #openEnvelope{
+        margin-top:20px;
+        padding:14px 42px;
+    }
+
+}
